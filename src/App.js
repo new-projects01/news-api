@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { getNewsIds } from './services/newsAPI';
+import React from 'react';
+import NewsContainer from './container/NewsContainer';
 
 function App() {
-  const [newsIds, setNewsIds] = useState([]);
-
-  useEffect(() => {
-    console.log(getNewsIds());
-  }, []);
-
-  return <div>{newsIds}</div>;
+  return <NewsContainer />;
 }
 
 export default App;

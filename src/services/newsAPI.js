@@ -7,7 +7,10 @@ export const topHeadlinesUrl = `${baseUrl}top-headlines?country=us&apiKey=${apiK
 
 // creating side effect (blocking the rendering of the UI)
 export const getNewsIds = async () => {
-  const result = await axios.get(everythingUrl).then(data => data);
+  const result = await axios
+    .get(everythingUrl)
+    .then(({ data }) => data)
+    .catch(err => console.log(err));
 
   return result;
 };
