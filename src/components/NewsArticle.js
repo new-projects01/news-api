@@ -2,12 +2,12 @@ import React from 'react';
 
 function NewsArticle({ data }) {
   return (
-    <div>
-      <h1>{data.title}</h1>
-      <p>{data.description}</p>
-      <span>{data.author}</span>
-      <span>{data.publishedAt}</span>
-      <span>{data.source.name}</span>
+    <div className="news">
+      <a href={data.url} target="_blank"><img className="image" src={data.urlToImage}></img></a>
+      <a href={data.url} target="_blank"><h2 className="title">{data.title}</h2></a>
+      <p className="author">{data.author}</p>
+      <p className="published">{data.publishedAt}</p>
+      <p className="source">{data.source.name}</p>
     </div>
   );
 }
