@@ -1,8 +1,14 @@
 import React from 'react';
-import NewsContainer from './container/NewsContainer';
+import NewsContextProvider from './components/NewsContext';
+import News from './components/News';
+import './app.css';
 
 function App() {
-  return <NewsContainer />;
+  return (
+    <NewsContextProvider>
+      <News />
+    </NewsContextProvider>
+  );
 }
 
 export default App;
