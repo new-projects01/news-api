@@ -7,7 +7,7 @@ function News(props) {
   console.log(data);
 
   return (
-    <div>
+    <div className='newsContainer'>
       {data
         ? data.articles.map(news => <NewsArticle data={news} key={news.url} />)
         : 'loading'}
