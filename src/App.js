@@ -1,8 +1,14 @@
 import React from 'react';
-import './App.css';
+import NewsContextProvider from './components/NewsContext';
+import News from './components/News';
+import './app.css';
 
 function App() {
-  return <div className='App'>News Api</div>;
+  return (
+    <NewsContextProvider>
+      <News />
+    </NewsContextProvider>
+  );
 }
 
 export default App;
