@@ -14,24 +14,26 @@ body {
   margin: 30px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px
+  gap: 10px;
 }
 
 .news {
   max-width: 300px;
   padding: 30px;
   border: 1px solid lightgray;
-  border-radius: 5px
-} a {
+  border-radius: 5px;
+}
+a {
   color: black;
-} a:hover {
+}
+a:hover {
   color: gray;
 }
 
 .image {
   width: 100%;
   border: 1px solid lightgray;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .title {
@@ -42,5 +44,4 @@ body {
 
 .source {
   text-align: right;
-  
 }

@@ -1,14 +1,16 @@
 import React from 'react';
-import NewsContextProvider from './components/NewsContext';
+
+import GlobalState from './context/GlobalState';
 import News from './components/News';
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <NewsContextProvider>
+    <GlobalState>
       <News />
-    </NewsContextProvider>
+    </GlobalState>
   );
-}
+};
 
 export default App;
