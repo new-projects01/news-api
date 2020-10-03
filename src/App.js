@@ -1,7 +1,7 @@
 import React from 'react';
 import NewsContextProvider from './components/NewsContext';
 import News from './components/News';
-import './App.css';
+import './app.css';
 
 function App() {
   return (
